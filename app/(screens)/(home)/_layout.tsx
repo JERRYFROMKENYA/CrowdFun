@@ -51,6 +51,7 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <TabBarIcon name="history" color={color} />,
         }}
       />
+     
     </Tabs>
   );
 }

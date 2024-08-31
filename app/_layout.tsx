@@ -57,6 +57,20 @@ function RootLayoutNav() {
       <ConvexProvider client={convex}>
         <Stack>
           <Stack.Screen name="(screens)/(home)" options={{ headerShown: false }} />
+          <Stack.Screen
+            name="/businessInfoModal"
+            options={{
+              presentation: 'modal',
+              headerShown:false,
+            }}
+          />
+          <Stack.Screen
+            name="/buySharesModal"
+            options={{
+              presentation: 'modal',
+              headerShown:false,
+            }}
+          />
         </Stack>
       </ConvexProvider>
     </ThemeProvider>
