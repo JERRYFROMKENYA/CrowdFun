@@ -8,6 +8,14 @@ export const getBusinesses = query({
   },
 });
 
+export const getBusiness = query({
+  args: { businessId: v.id("businesses") },
+  handler: async (ctx, args) => {
+    const business = await ctx.db.get(args.businessId);
+    return business
+  },
+})
+
 export const getApprovedBusinesses = query({
   args: {},
   handler: async (ctx) => {
